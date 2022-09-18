@@ -41,9 +41,12 @@ public class C2_AssertionMethodlariIleTest {
 
         String actualYaziStr= sonucYaziElementi.getText();
         // 1-48 of 105 results for "Nutella"
-        String expectedBulunacakKelime="Kutella";
+        //String expectedBulunacakKelime="Kutella";
+        //Assert.assertTrue(actualYaziStr.contains(expectedBulunacakKelime));//Test faıled olur çünkü nutella ve kutella eşit değildir
 
-        Assert.assertTrue(actualYaziStr.contains(expectedBulunacakKelime));
+        String expectedBulunacakKelime="Nutella";
+        Assert.assertTrue(actualYaziStr.contains(expectedBulunacakKelime)); // Bu şekilde yazınca sonuç doğru çıkar
+
 
         /*
         int aliYas=56;
